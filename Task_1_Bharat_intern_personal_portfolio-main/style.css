@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* width: 100vw; */
+    box-sizing: border-box;
+    font-family: 'Angkor', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Merriweather+Sans&family=Rubik:wght@300;400;500&display=swap');
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    color: white;
+}
+
+/* name */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(27, 13, 135);
+    height: 40px;
+    position: fixed;
+    width: 100vw;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+/* list */
+nav ul {
+    display: flex;
+    padding: 10px;
+}
+
+#list li {
+    padding-left: 30px;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.945);
+    color: white;
+
+    height: 700px;
+    /* height: 200vh; */
+}
+
+#home_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 80vh; */
+}
+
+#home_content img {
+    height: 320px;
+    width: auto;
+    border-radius: 50%;
+    border: 5px solid rgba(238, 130, 238, 0.63);
+}
+
+#home_text {
+    padding-left: 100px;
+    max-width: 500px;
+    min-width: 400px;
+    max-height: 350px;
+}
+
+#name {
+    color: violet;
+    font-weight: 500;
+}
+
+#home_text a {
+    text-decoration: none;
+    color: black;
+    /* height: 50px; */
+    /* background-color: white; */
+
+    background-color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    border: 1px solid rgb(170, 193, 43);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#list li a {
+    transition: 300ms ease;
+}
+
+/* hover effects */
+#home_text a:hover {
+    color: white;
+    background-color: rgb(91, 95, 183);
+    box-shadow: 0px 10px 90px rgb(84, 61, 176);
+}
+
+nav #list li a:hover {
+    color: rgb(199, 199, 199);
+    border-bottom: 2px solid rgb(199, 199, 199);
+}
+
+/* shadows of the boxes */
+nav {
+    box-shadow: 0px 0px 100px rgb(66, 13, 151);
+}
+
+#home_content img {
+    box-shadow: 0px 0px 80px rgba(215, 212, 215, 0.384);
+}
+
+
+
+/* about section  */
+#about {
+    height: fit-content;
+    background-color: rgb(26, 4, 26);
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+#about h1,
+#content {
+    color: white;
+}
+
+#content h1 i {
+    font-size: 25px;
+}
+
+.highlight {
+    color: rgb(23, 21, 23);
+}
+
+
+#about #content {
+    min-width: 400px;
+    max-width: 800px;
+}
+
+#education {
+    height: auto;
+    border: 1px solid grey;
+}
+
+#education #head {
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+#education #content {
+    padding: 10px;
+}
+
+/* skills section */
+#skills {
+    height: fit-content;
+    padding: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(20, 20, 20);
+}
+
+#skills #main_div {
+    border: 1px solid;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 40px rgba(238, 130, 238, 0.288);
+}
+
+.language img {
+    width: 100px;
+    margin: 15px;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sk_imgs {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-bottom: 5px;
+}
+
+#main_div h2 {
+    border-bottom: 1px solid rgba(238, 130, 238, 0.171);
+    padding-bottom: 5px;
+}
+
+/* contact page */
+#contact {
+    padding-top: 35px;
+    padding-bottom: 92px;
+    height: fit-content;
+    background-color: rgb(56, 46, 58);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contact_info ul li a {
+    text-decoration: none;
+    color: white;
+}
+#contact_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact_info ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#cntct_fc_ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-right: 1px solid white;
+    margin-left: 29px;
+}
+#contact_info ul li a:hover{
+    color: rgb(38, 180, 17);
+}
+#contact_info ul li{
+    padding: 5px;
+}
